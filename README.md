@@ -2,12 +2,9 @@
 
 The Password Generator is a simple web application that allows users to generate secure passwords with customizable options such as length, inclusion of numbers, and special characters.
 
-## Table of Contents
+## Preview
 
-1. [Features](#features)
-2. [Usage](#usage)
-3. [Technologies Used](#technologies-used)
-4. [Contributing](#contributing)
+![Password Generator Preview](./public/password-generator-preview.png)
 
 ## Features
 
