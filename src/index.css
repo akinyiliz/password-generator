@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  font-family: sans-serif;
+}
+@layer components {
+  .label-text{
+    @apply text-grayText uppercase text-sm;
+  }
+  .settings-tab{
+    @apply w-full bg-inputBg text-whiteText flex items-center justify-between py-3 px-4 rounded-xl
+  }
+}
