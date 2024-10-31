@@ -8,7 +8,7 @@ export default {
       cardBg: '#090412',
       inputBg: '#26183c',
       whiteText: '#e9e8ea',
-      grayText: '#56505d',
+      grayText: '#9ca3af',
       secondary: '#d181ff',
       icon: '#814e9e',
     },
