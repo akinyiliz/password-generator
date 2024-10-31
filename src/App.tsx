@@ -45,6 +45,10 @@ function App() {
     }, 4000);
   };
 
+  const min = 8;
+  const max = 20;
+  const fillPercentage = ((passwordLength - min) / (max - min)) * 100;
+
   return (
     <div className="w-full h-screen bg-mainBg flex justify-center items-center px-2 overflow-auto">
       <div className="w-[90%] h-[550px] md:max-w-xl mx-auto bg-cardBg shadow-md rounded-2xl px-4 py-3 md:w-[50%] lg:w-[35%]">
@@ -101,13 +105,16 @@ function App() {
                 type="range"
                 name="passwordLength"
                 id="passwordLength"
-                min={8}
-                max={20}
+                min={min}
+                max={max}
                 value={passwordLength}
-                className="flex-1 cursor-pointer"
+                className="flex-1 custom-range"
                 onChange={(event) =>
                   setPasswordLength(parseInt(event.target.value))
                 }
+                style={{
+                  background: `linear-gradient(90deg, #d181ff ${fillPercentage}%, #56505d ${fillPercentage}%)`,
+                }}
               />
               <span>20</span>
             </div>
