@@ -5,7 +5,7 @@ type PasswordFieldProps = {
   password: string;
   onRefresh: () => void;
   onCopy: () => void;
-  passwordRef: React.LegacyRef<HTMLInputElement> | undefined;
+  passwordRef?: React.LegacyRef<HTMLInputElement> | undefined;
 };
 
 export const PasswordField = ({
