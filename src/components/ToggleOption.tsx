@@ -17,6 +17,7 @@ const ToggleOption = ({ label, value, onValueChange }: ToggleOptionProps) => {
           size={33}
           color="#d181ff"
           onClick={() => onValueChange(false)}
+          role="button"
         />
       ) : (
         <BsToggleOff size={33} onClick={() => onValueChange(true)} />
