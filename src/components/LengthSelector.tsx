@@ -21,6 +21,7 @@ const LengthSelector = ({ length, onLengthChange }: LengthSelectorProps) => {
           type="range"
           name="passwordLength"
           id="passwordLength"
+          role="slider"
           min={min}
           max={max}
           value={length}
