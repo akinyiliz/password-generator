@@ -70,15 +70,7 @@ function App() {
 
             <div className="w-ful space-y-3">
               <ToggleOption
-                label="Include uppercase letters"
-                value={passwordConfigs.includeUppercase}
-                onValueChange={(value) =>
-                  updatePasswordConfigs('includeUppercase', value)
-                }
-              />
-
-              <ToggleOption
-                label="Include uppercase letters"
+                label="Include numbers"
                 value={passwordConfigs.includeNumbers}
                 onValueChange={(value) =>
                   updatePasswordConfigs('includeNumbers', value)
@@ -87,6 +79,14 @@ function App() {
 
               <ToggleOption
                 label="Include uppercase letters"
+                value={passwordConfigs.includeUppercase}
+                onValueChange={(value) =>
+                  updatePasswordConfigs('includeUppercase', value)
+                }
+              />
+
+              <ToggleOption
+                label="Include special characters"
                 value={passwordConfigs.includeSymbols}
                 onValueChange={(value) =>
                   updatePasswordConfigs('includeSymbols', value)
